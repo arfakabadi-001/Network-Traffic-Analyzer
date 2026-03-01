@@ -1,4 +1,4 @@
-# Network Traffic Analyzer
+# NetPulse- Network Traffic Analyzer
 
 A real-time network traffic monitoring and analysis tool built using Python.  
 This project captures live network packets, analyzes traffic behavior, detects anomalies, and presents structured summaries with visual insights.
@@ -32,7 +32,6 @@ It is designed to be resume-ready, examiner-friendly, and scalable.
 - SQLite – persistent storage  
 - Matplotlib – traffic visualization  
 - Threading – real-time processing  
-
 ---
 
 ## How It Works
