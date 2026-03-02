@@ -31,7 +31,9 @@ It is designed to be resume-ready, examiner-friendly, and scalable.
 - Scapy – packet capturing and inspection  
 - SQLite – persistent storage  
 - Matplotlib – traffic visualization  
-- Threading – real-time processing  
+- Threading – real-time processing
+- Flask – Python backend
+- HTML5, CSS3 – User Interface  
 ---
 
 ## How It Works
