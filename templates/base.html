@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NetPulse | Network Traffic Analyzer</title>
+
+    <!-- Auto refresh every 5 seconds -->
+    <meta http-equiv="refresh" content="5">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">NetPulse</h2>
+        <p class="subtitle">Network Traffic Analyzer</p>
+
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/traffic">Traffic</a>
+            <a href="/alerts">Alerts</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        NetPulse © 2026
+    </footer>
+
+</body>
+</html>

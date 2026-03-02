@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Live Network Traffic</h2>
+
+<table>
+<tr>
+    <th>Time</th>
+    <th>Source IP</th>
+    <th>Destination IP</th>
+    <th>Protocol</th>
+    <th>Packets</th>
+    <th>Ports</th>
+    <th>Status</th>
+</tr>
+
+{% for r in records %}
+<tr>
+    <td>{{ r[0] }}</td>
+    <td>{{ r[1] }}</td>
+    <td>{{ r[2] }}</td>
+    <td>{{ r[3] }}</td>
+    <td>{{ r[4] }}</td>
+    <td>{{ r[5] }}</td>
+    <td>{{ r[6] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

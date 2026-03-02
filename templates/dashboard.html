@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="dashboard-hero">
+    <h1>Network Traffic Dashboard</h1>
+    <p>Live overview of packets, IP activity, and security alerts</p>
+</div>
+
+<div class="dashboard-metrics">
+
+    <div class="metric-card packets">
+        <h3>Total Packets</h3>
+        <span>{{ total_packets }}</span>
+    </div>
+
+    <div class="metric-card ips">
+        <h3>Unique IPs</h3>
+        <span>{{ unique_ips }}</span>
+    </div>
+
+    <div class="metric-card alerts">
+        <h3>Alerts Detected</h3>
+        <span>{{ alert_count }}</span>
+    </div>
+
+</div>
+
+<div class="dashboard-info">
+    <p>
+        NetPulse monitors live network traffic, aggregates packet statistics,
+        and flags abnormal behavior using simple threshold-based detection logic.
+    </p>
+</div>
+
+{% endblock %}
